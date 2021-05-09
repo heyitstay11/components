@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./app.js" defer></script>
+    <title>Tabs</title>
+</head>
+<body>
+    <main>
+        <div class="tab-container" id="first">
+            <ul class="tab-nav">
+                <li><button class="tab-link active" data-target="home">HTML</button></li>
+                <li><button class="tab-link" data-target="about">CSS</button></li>
+                <li><button class="tab-link" data-target="project">Javascript</button></li>
+            </ul>
+            <div class="tab-content active" data-content="home">
+                <h2>HTML</h2>
+                <p>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be
+                    displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS)
+                    and scripting languages such as JavaScript</p>
+            </div>
+            <div class="tab-content" data-content="about">
+                <h2>CSS</h2>
+                <p>Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document 
+                   written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript</p>
+            </div>
+            <div class="tab-content" data-content="project">
+                <h2>Project</h2>
+                <p>JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions.
+                   While it is most well-known as the scripting language for Web pages, many non-browser environments also use it, such as Node.js, Apache CouchDB and Adobe Acrobat</p>
+            </div>
+        </div>
+                     <!-- FOR TESTING REUSABILITY --> 
+                     
+        <!-- <div class="new-tab-container" id="second">
+            <ul class="tab-nav">
+                <li><button class="tab-link active" data-target="home">Home</button></li>
+                <li><button class="tab-link" data-target="about">About</button></li>
+                <li><button class="tab-link" data-target="project">Project</button></li>
+            </ul>
+            <div class="tab-content active" data-content="home">
+                <h2>Home</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                   Labore, provident pariatur. Quis amet laborum ipsa ipsum ex illum.
+                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="tab-content" data-content="about">
+                <h2>About</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                   Labore, provident pariatur. Quis amet laborum ipsa ipsum ex illum.
+                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="tab-content" data-content="project">
+                <h2>Project</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                   Labore, provident pariatur. Quis amet laborum ipsa ipsum ex illum.</p>
+            </div>
+        </div> -->
+
+    </main>
+</body>
+</html>
