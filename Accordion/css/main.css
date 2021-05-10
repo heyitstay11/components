@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #bdecff;
+  font-family: serif;
+}
+
+main {
+  width: 500px;
+  max-width: 96vw;
+  margin: 0 auto;
+}
+
+main h1 {
+  text-align: center;
+  color: #006363;
+  font-size: 2.4rem;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  -webkit-text-decoration: underline #006363;
+          text-decoration: underline #006363;
+}
+
+main .accordion-container {
+  border: 4px solid #00a0a0;
+  background-color: white;
+  color: #006b6b;
+}
+
+main .accordion-container .accordion-title {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: .25rem;
+  padding: 4px 8px;
+  background-color: white;
+  cursor: pointer;
+}
+
+main .accordion-container .accordion-title:hover {
+  background-color: #eeeeee;
+}
+
+main .accordion-container .accordion-title.active {
+  background-color: #eeeeee;
+  -webkit-box-shadow: 0 6px 14px rgba(0, 107, 107, 0.384);
+          box-shadow: 0 6px 14px rgba(0, 107, 107, 0.384);
+}
+
+main .accordion-container .accordion-title.active img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+main .accordion-container .accordion-title h2 {
+  font-size: 1.8rem;
+  color: #006363;
+  letter-spacing: 1px;
+  font-family: serif;
+}
+
+main .accordion-container .accordion-content {
+  padding: 2px 4px;
+  display: none;
+  background-color: white;
+}
+
+main .accordion-container .accordion-content.active {
+  display: block;
+}
+
+main .accordion-container .accordion-content p {
+  font-size: 1.05rem;
+  letter-spacing: 1px;
+  padding: 4px 6px;
+  margin: 4px 0;
+}
+/*# sourceMappingURL=main.css.map */
