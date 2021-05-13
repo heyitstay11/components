@@ -40,6 +40,10 @@ main{
             padding: 4px 8px;
             background-color: white;
             cursor: pointer;
+
+            img{
+                transition: all .25s ease-in-out;
+            }
             
             &:hover{
                 background-color: rgb(238, 238, 238); 
@@ -51,6 +55,7 @@ main{
 
                 img{
                     transform: rotate(180deg);
+                    transition: all .25s ease-in-out;
                 }
             }
 
@@ -65,11 +70,13 @@ main{
 
         .accordion-content{
             padding: 2px 4px;
-            display: none;
+            max-height: 0;
+            overflow: hidden;
             background-color: white;
+            transition: all .4s ease-in-out;
 
             &.active{
-                display: block;
+               max-height: 300px;
             }
 
             p{

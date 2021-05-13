@@ -56,6 +56,11 @@ main .accordion-container .accordion-title {
   cursor: pointer;
 }
 
+main .accordion-container .accordion-title img {
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
 main .accordion-container .accordion-title:hover {
   background-color: #eeeeee;
 }
@@ -69,6 +74,8 @@ main .accordion-container .accordion-title.active {
 main .accordion-container .accordion-title.active img {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
 }
 
 main .accordion-container .accordion-title h2 {
@@ -80,12 +87,15 @@ main .accordion-container .accordion-title h2 {
 
 main .accordion-container .accordion-content {
   padding: 2px 4px;
-  display: none;
+  max-height: 0;
+  overflow: hidden;
   background-color: white;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 main .accordion-container .accordion-content.active {
-  display: block;
+  max-height: 300px;
 }
 
 main .accordion-container .accordion-content p {
