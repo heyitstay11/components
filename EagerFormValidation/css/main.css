@@ -1,0 +1,84 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  background-color: #e0f6ff;
+  font-family: serif;
+}
+
+main h1 {
+  text-align: center;
+  margin-bottom: 1.2rem;
+  font-size: 2.2rem;
+  color: #007474;
+  text-decoration: underline;
+}
+
+main form {
+  width: 420px;
+  max-width: 96%;
+  margin: 0 auto;
+  padding: 30px;
+  -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background: white;
+  letter-spacing: .6px;
+}
+
+main input {
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 1.2em;
+  width: 100%;
+}
+
+main label {
+  display: block;
+  margin: 20px 0 10px;
+  font-size: 1.15rem;
+}
+
+main button {
+  margin: 0 auto;
+  margin-top: 30px;
+  border-radius: 36px;
+  background: #ffda48;
+  border: 3px solid #363636;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.8em;
+  display: block;
+  padding: 10px 16px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  -webkit-transition: background-color .25s ease-in-out;
+  transition: background-color .25s ease-in-out;
+}
+
+main button:hover {
+  background: #e4b600;
+}
+
+main .error {
+  color: #f52500;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-top: .2rem;
+}
+/*# sourceMappingURL=main.css.map */
