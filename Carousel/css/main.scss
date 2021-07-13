@@ -65,6 +65,9 @@ body{
 
     .arrow{
         position: absolute;
+        background-color: transparent;
+        border: none;
+        font-family: inherit;
         top: 50%;
         z-index: 1;
         font-size: 3.25rem;
